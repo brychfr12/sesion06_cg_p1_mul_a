@@ -1,0 +1,39 @@
+<canvas width='500' height='500'  id='canvas'>
+<canvas id='canvas'/>
+<script>
+function draw() {
+  var ctx = document.getElementById('canvas').getContext('2d');
+
+
+
+  ctx.fillStyle = '#FFE800'; 
+  //ctx.fillRect(150, 30, 100, 100);
+
+
+
+  ctx.moveTo(100,150)
+  ctx.lineTo(150,130)
+  ctx.lineTo(150,230)
+  ctx.lineTo(100,250)
+  ctx.fill();
+  ctx.fillStyle = '#A8BC3A'; 
+  ctx.fillRect(150, 30, 100, 100);
+
+  ctx.beginPath();
+  ctx.moveTo(200,150)
+  ctx.lineTo(300,150)
+  ctx.lineTo(350,130)
+  ctx.lineTo(250,130)
+  ctx.fill();
+  ctx.fillStyle = '#D8FF00'; 
+  ctx.fillRect(150, 30, 100, 100);
+
+
+}
+draw();
+</script>
+
+
+}
+draw();
+</script>

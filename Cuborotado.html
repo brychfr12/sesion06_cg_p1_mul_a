@@ -1,0 +1,40 @@
+
+<canvas id='canvas'/>
+<script>
+function draw() {
+  var ctx = document.getElementById('canvas').getContext('2d');
+
+
+
+  ctx.fillStyle = '#FFE800'; 
+
+  ctx.translate(200, 80); 
+  ctx.rotate((Math.PI / 180) * 30); 
+  ctx.translate(-200, -80); 
+
+
+
+
+  ctx.moveTo(100,50)
+  ctx.lineTo(150,30)
+  ctx.lineTo(150,130)
+  ctx.lineTo(100,150)
+  ctx.fill();
+  ctx.fillStyle = '#A8BC3A'; 
+  ctx.fillRect(150, 30, 100, 100);
+
+  ctx.beginPath();
+  ctx.moveTo(100,150)
+  ctx.lineTo(200,150)
+  ctx.lineTo(250,130)
+  ctx.lineTo(150,130)
+  ctx.fill();
+  ctx.fillStyle = '#D8FF00'; 
+  ctx.fillRect(150, 30, 100, 100);
+
+
+
+
+}
+draw();
+</script>
